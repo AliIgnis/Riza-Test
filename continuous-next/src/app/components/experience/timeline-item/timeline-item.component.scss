@@ -99,7 +99,7 @@
     background: var(--cn-card-bg);
     border: 1px solid var(--cn-border);
     border-radius: $card-border-radius;
-    padding: $spacing-lg;
+    padding: $spacing-lg $spacing-3xl $spacing-lg $spacing-lg;
     cursor: pointer;
     position: relative;
     transition: border-color $transition-base, box-shadow $transition-base, background $transition-base;
