@@ -28,9 +28,11 @@
       </div>
     </address>
 
-    <a class="contact__cta" [href]="mailtoHref()" [attr.aria-label]="'CONTACT.CTA' | translate">
-      {{ 'CONTACT.CTA' | translate }}
-    </a>
+    <div class="contact__cta-wrap">
+      <a class="contact__cta" [href]="mailtoHref()" [attr.aria-label]="'CONTACT.CTA' | translate">
+        {{ 'CONTACT.CTA' | translate }}
+      </a>
+    </div>
     <p class="contact__subtext">{{ 'CONTACT.CTA_SUBTEXT' | translate }}</p>
     <p class="contact__response">{{ 'CONTACT.RESPONSE_NOTE' | translate }}</p>
   </div>

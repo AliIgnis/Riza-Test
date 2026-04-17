@@ -30,10 +30,11 @@
 
   &__details {
     font-style: normal;
-    display: inline-grid;
+    display: grid;
     grid-template-columns: auto auto;
     gap: $spacing-sm $spacing-lg;
     text-align: left;
+    width: fit-content;
     margin: 0 auto $spacing-2xl;
 
     @include breakpoint-down(sm) {
@@ -76,6 +77,12 @@
     width: 16px;
     height: 16px;
     color: var(--cn-primary);
+  }
+
+  &__cta-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: $spacing-xl;
   }
 
   &__cta {
