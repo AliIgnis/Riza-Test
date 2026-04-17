@@ -1,0 +1,110 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.footer {
+  background: var(--cn-primary-dark);
+  color: rgba(255, 255, 255, 0.78);
+  padding-top: $spacing-3xl;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: $spacing-2xl;
+    padding-bottom: $spacing-2xl;
+
+    @include breakpoint-down(md) {
+      grid-template-columns: 1fr;
+      gap: $spacing-xl;
+    }
+  }
+
+  &__col--brand {
+    max-width: 420px;
+  }
+
+  &__brand {
+    display: inline-block;
+    font-family: $font-family-heading;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-semibold;
+    color: #FFFFFF;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__tagline {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: $spacing-md;
+    font-size: $font-size-sm;
+  }
+
+  &__copy {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: $font-size-xs;
+    margin: 0;
+  }
+
+  &__heading {
+    font-family: $font-family-heading;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: $spacing-md;
+  }
+
+  &__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.78);
+    text-decoration: none;
+    font-size: $font-size-sm;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    font-style: normal;
+    font-size: $font-size-sm;
+  }
+
+  &__line {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: $spacing-md 0;
+  }
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: flex-end;
+    gap: $spacing-lg;
+  }
+
+  &__meta {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: $font-size-xs;
+    text-decoration: none;
+
+    &:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.about {
+  background: var(--cn-bg);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: $spacing-3xl;
+    align-items: flex-start;
+
+    @include breakpoint-down(lg) {
+      grid-template-columns: 1fr;
+      gap: $spacing-xl;
+    }
+  }
+
+  &__narrative {
+    max-width: 720px;
+  }
+
+  &__headline {
+    font-size: $font-size-3xl;
+    margin-bottom: $spacing-lg;
+
+    @include breakpoint-up(md) {
+      font-size: $font-size-4xl;
+    }
+  }
+
+  &__lead {
+    font-size: $font-size-lg;
+    color: var(--cn-text);
+    font-weight: $font-weight-medium;
+    margin-bottom: $spacing-lg;
+    line-height: 1.55;
+  }
+
+  &__paragraph {
+    font-size: $font-size-base;
+    line-height: 1.7;
+    margin-bottom: $spacing-md;
+  }
+
+  &__roles {
+    @include breakpoint-up(lg) {
+      position: sticky;
+      top: #{$navbar-height + 32px};
+    }
+  }
+
+  &__roles-card {
+    @include card;
+    padding: $spacing-xl;
+  }
+
+  &__roles-title {
+    @include eyebrow;
+    margin: 0 0 $spacing-md 0;
+    color: var(--cn-text-secondary);
+  }
+
+  &__roles-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+  }
+
+  &__role {
+    display: inline-block;
+    padding: $spacing-xs $spacing-md;
+    background: var(--cn-primary-light);
+    color: var(--cn-primary);
+    border-radius: 999px;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+  }
+}

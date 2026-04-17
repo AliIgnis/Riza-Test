@@ -1,0 +1,43 @@
+<footer class="footer" role="contentinfo">
+  <div class="cn-container footer__inner">
+    <div class="footer__col footer__col--brand">
+      <span class="footer__brand">{{ companyName }}</span>
+      <p class="footer__tagline">{{ 'FOOTER.TAGLINE' | translate }}</p>
+      <p class="footer__copy">
+        {{ 'FOOTER.COPYRIGHT' | translate: { name: ownerName, company: companyName } }}
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__heading">{{ 'FOOTER.QUICK_LINKS' | translate }}</h4>
+      <ul class="footer__links">
+        @for (link of links; track link.id) {
+          <li>
+            <a
+              class="footer__link"
+              [attr.href]="'#' + link.sectionId"
+              (click)="$event.preventDefault(); goTo(link.sectionId)">
+              {{ link.labelKey | translate }}
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__heading">{{ 'FOOTER.CONTACT_HEADING' | translate }}</h4>
+      <address class="footer__address">
+        <a class="footer__link" [href]="'mailto:' + email">{{ email }}</a>
+        <span class="footer__line">{{ phone }}</span>
+        <span class="footer__line">{{ location }}</span>
+      </address>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="cn-container footer__bottom-inner">
+      <a class="footer__meta" href="#">{{ 'FOOTER.IMPRINT' | translate }}</a>
+      <a class="footer__meta" href="#">{{ 'FOOTER.PRIVACY' | translate }}</a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,37 @@
+<section id="contact" class="contact cn-section" aria-labelledby="contact-headline">
+  <div class="contact__inner" cnFadeIn>
+    <h2 id="contact-headline" class="contact__headline">{{ 'CONTACT.HEADLINE' | translate }}</h2>
+    <p class="contact__intro">{{ 'CONTACT.INTRO' | translate }}</p>
+
+    <address class="contact__details">
+      <div class="contact__row">
+        <span class="contact__label">{{ 'CONTACT.EMAIL_LABEL' | translate }}</span>
+        <a class="contact__value" [href]="mailtoHref()">
+          <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <polyline points="22 7 12 13 2 7"></polyline>
+          </svg>
+          {{ email }}
+        </a>
+      </div>
+      <div class="contact__row">
+        <span class="contact__label">{{ 'CONTACT.PHONE_LABEL' | translate }}</span>
+        <a class="contact__value" [href]="phoneHref()">{{ phone }}</a>
+      </div>
+      <div class="contact__row">
+        <span class="contact__label">{{ 'CONTACT.WEB_LABEL' | translate }}</span>
+        <a class="contact__value" [href]="websiteHref()" target="_blank" rel="noopener noreferrer">{{ website }}</a>
+      </div>
+      <div class="contact__row">
+        <span class="contact__label">{{ 'CONTACT.LOCATION_LABEL' | translate }}</span>
+        <span class="contact__value">{{ location }}</span>
+      </div>
+    </address>
+
+    <a class="contact__cta" [href]="mailtoHref()" [attr.aria-label]="'CONTACT.CTA' | translate">
+      {{ 'CONTACT.CTA' | translate }}
+    </a>
+    <p class="contact__subtext">{{ 'CONTACT.CTA_SUBTEXT' | translate }}</p>
+    <p class="contact__response">{{ 'CONTACT.RESPONSE_NOTE' | translate }}</p>
+  </div>
+</section>

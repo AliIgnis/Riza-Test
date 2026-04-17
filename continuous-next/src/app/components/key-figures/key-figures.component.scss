@@ -1,0 +1,109 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.key-figures {
+  background: var(--cn-primary);
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.08) 1px, transparent 0);
+    background-size: 32px 32px;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  &__header {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto $spacing-3xl;
+    position: relative;
+  }
+
+  &__headline {
+    color: #FFFFFF;
+    font-size: $font-size-3xl;
+
+    @include breakpoint-up(md) {
+      font-size: $font-size-4xl;
+    }
+  }
+
+  &__intro {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: $font-size-lg;
+    margin: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-xl;
+    position: relative;
+
+    @include breakpoint-down(md) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $spacing-lg;
+    }
+
+    @include breakpoint-down(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    padding: $spacing-xl $spacing-md;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+
+    &:first-child {
+      border-left: none;
+    }
+
+    @include breakpoint-down(md) {
+      border-left: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: $spacing-lg $spacing-md;
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+  }
+
+  &__number {
+    display: inline-flex;
+    align-items: baseline;
+    font-family: $font-family-heading;
+    font-weight: $font-weight-semibold;
+    color: var(--cn-accent-light);
+    line-height: 1;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__value {
+    font-size: $font-size-stat;
+    font-variant-numeric: tabular-nums;
+
+    @include breakpoint-down(md) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__suffix {
+    font-size: $font-size-3xl;
+    margin-left: 2px;
+  }
+
+  &__label {
+    font-size: $font-size-sm;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.4;
+  }
+}

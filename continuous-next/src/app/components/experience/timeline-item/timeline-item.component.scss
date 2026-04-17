@@ -1,0 +1,209 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: $spacing-xl;
+  align-items: flex-start;
+  padding-bottom: $spacing-xl;
+  position: relative;
+
+  @include breakpoint-down(md) {
+    grid-template-columns: 1fr;
+    gap: $spacing-sm;
+  }
+
+  &__rail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: $spacing-md;
+    position: relative;
+
+    @include breakpoint-down(md) {
+      align-items: flex-start;
+      padding-top: 0;
+    }
+  }
+
+  &__dates {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: $font-size-sm;
+    color: var(--cn-text-secondary);
+    text-align: right;
+    line-height: 1.4;
+    font-variant-numeric: tabular-nums;
+
+    @include breakpoint-down(md) {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  &__date-range {
+    font-weight: $font-weight-medium;
+    color: var(--cn-text);
+  }
+
+  &__duration {
+    font-size: $font-size-xs;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--cn-text-secondary);
+  }
+
+  &__ongoing {
+    display: inline-block;
+    margin-top: $spacing-xs;
+    padding: 2px $spacing-sm;
+    background: var(--cn-accent);
+    color: #FFFFFF;
+    border-radius: 999px;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    letter-spacing: 0.03em;
+  }
+
+  &__node {
+    position: absolute;
+    right: -23px;
+    top: 24px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--cn-primary);
+    border: 3px solid var(--cn-bg);
+    z-index: 1;
+
+    @include breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  &.is-ongoing &__node {
+    background: var(--cn-accent);
+    box-shadow: 0 0 0 4px rgba(176, 141, 87, 0.25);
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__toggle {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: var(--cn-card-bg);
+    border: 1px solid var(--cn-border);
+    border-radius: $card-border-radius;
+    padding: $spacing-lg;
+    cursor: pointer;
+    position: relative;
+    transition: border-color $transition-base, box-shadow $transition-base, background $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      border-color: var(--cn-primary);
+      box-shadow: 0 4px 12px var(--cn-shadow);
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__client {
+    margin: 0;
+    font-size: $font-size-xl;
+    color: var(--cn-text);
+  }
+
+  &__role {
+    font-size: $font-size-sm;
+    color: var(--cn-primary);
+    font-weight: $font-weight-medium;
+  }
+
+  &__context {
+    margin: 0;
+    font-size: $font-size-base;
+    color: var(--cn-text-secondary);
+    line-height: 1.6;
+  }
+
+  &__affordance {
+    position: absolute;
+    top: $spacing-lg;
+    right: $spacing-lg;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--cn-primary-light);
+    color: var(--cn-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+  }
+
+  &__body {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height $transition-slow, opacity $transition-slow, padding $transition-slow;
+    padding: 0 $spacing-lg;
+  }
+
+  &.is-expanded &__body {
+    max-height: 800px;
+    opacity: 1;
+    padding: $spacing-md $spacing-lg $spacing-lg $spacing-lg;
+    border-left: 1px solid var(--cn-border);
+    border-right: 1px solid var(--cn-border);
+    border-bottom: 1px solid var(--cn-border);
+    border-bottom-left-radius: $card-border-radius;
+    border-bottom-right-radius: $card-border-radius;
+    background: var(--cn-card-bg);
+    margin-top: -1px;
+  }
+
+  &.is-expanded &__toggle {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &__bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__bullet {
+    position: relative;
+    padding-left: $spacing-lg;
+    margin-bottom: $spacing-sm;
+    color: var(--cn-text-secondary);
+    line-height: 1.6;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 8px;
+      height: 8px;
+      background: var(--cn-accent);
+      transform: rotate(45deg);
+    }
+  }
+}

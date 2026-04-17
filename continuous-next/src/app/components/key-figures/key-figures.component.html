@@ -1,0 +1,22 @@
+<section class="key-figures cn-section" aria-labelledby="key-figures-headline">
+  <div class="cn-container">
+    <header class="key-figures__header" cnFadeIn>
+      <h2 id="key-figures-headline" class="key-figures__headline">
+        {{ 'KEY_FIGURES.HEADLINE' | translate }}
+      </h2>
+      <p class="key-figures__intro">{{ 'KEY_FIGURES.INTRO' | translate }}</p>
+    </header>
+
+    <div class="key-figures__grid">
+      @for (figure of figures; track figure.id; let i = $index) {
+        <div class="key-figures__card">
+          <div class="key-figures__number">
+            <span #figureValue class="key-figures__value">{{ displayValues[i] }}</span><span
+              class="key-figures__suffix">{{ figure.suffix }}</span>
+          </div>
+          <div class="key-figures__label">{{ figure.labelKey | translate }}</div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

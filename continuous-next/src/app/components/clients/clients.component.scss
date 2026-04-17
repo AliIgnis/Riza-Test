@@ -1,0 +1,63 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.clients {
+  padding-top: $spacing-3xl;
+  padding-bottom: $spacing-3xl;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__headline {
+    font-size: $font-size-2xl;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__intro {
+    color: var(--cn-text-secondary);
+    margin: 0 auto $spacing-xl;
+    max-width: 640px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-md $spacing-lg;
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-lg;
+  }
+
+  &__name {
+    font-family: $font-family-heading;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    color: var(--cn-text-secondary);
+    transition: color $transition-fast, transform $transition-fast;
+    letter-spacing: 0.01em;
+
+    &:hover {
+      color: var(--cn-primary);
+      transform: scale(1.04);
+    }
+  }
+
+  &__separator {
+    color: var(--cn-divider, var(--cn-border));
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+
+    @include breakpoint-down(md) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<section id="clients" class="clients cn-section cn-section--alt" aria-labelledby="clients-headline">
+  <div class="cn-container clients__inner" cnFadeIn>
+    <h2 id="clients-headline" class="clients__headline">{{ 'CLIENTS.HEADLINE' | translate }}</h2>
+    <p class="clients__intro">{{ 'CLIENTS.INTRO' | translate: { years: years } }}</p>
+
+    <ul class="clients__list">
+      @for (client of clients; track client; let last = $last) {
+        <li class="clients__item">
+          <span class="clients__name">{{ client }}</span>
+          @if (!last) {
+            <span class="clients__separator" aria-hidden="true">·</span>
+          }
+        </li>
+      }
+    </ul>
+  </div>
+</section>

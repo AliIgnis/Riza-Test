@@ -1,0 +1,51 @@
+<article class="timeline-item" [class.is-ongoing]="project.ongoing" [class.is-expanded]="expanded">
+  <div class="timeline-item__rail">
+    <time class="timeline-item__dates" [attr.datetime]="project.startDate">
+      <span class="timeline-item__date-range">{{ dateLabel() }}</span>
+      <span class="timeline-item__duration">{{ duration() }}</span>
+      @if (project.ongoing) {
+        <span class="timeline-item__ongoing">{{ 'EXPERIENCE.ONGOING' | translate }}</span>
+      }
+    </time>
+    <span class="timeline-item__node" aria-hidden="true"></span>
+  </div>
+
+  <div class="timeline-item__content">
+    <button
+      type="button"
+      class="timeline-item__toggle"
+      [attr.aria-expanded]="expanded"
+      [attr.aria-controls]="'project-body-' + project.id"
+      [attr.aria-label]="(expanded ? 'EXPERIENCE.COLLAPSE_PROJECT' : 'EXPERIENCE.EXPAND_PROJECT') | translate"
+      (click)="onToggle($event)"
+      (keydown)="onKey($event)">
+      <div class="timeline-item__header">
+        <h3 class="timeline-item__client">
+          {{ project.translationKey + '.CLIENT' | translate }}
+        </h3>
+        <span class="timeline-item__role">
+          {{ project.translationKey + '.ROLE' | translate }}
+        </span>
+      </div>
+      <p class="timeline-item__context">
+        {{ project.translationKey + '.CONTEXT' | translate }}
+      </p>
+      <span class="timeline-item__affordance" aria-hidden="true">
+        {{ expanded ? '−' : '+' }}
+      </span>
+    </button>
+
+    <div
+      class="timeline-item__body"
+      [id]="'project-body-' + project.id"
+      [attr.aria-hidden]="!expanded">
+      <ul class="timeline-item__bullets">
+        @for (bulletKey of project.bulletKeys; track bulletKey) {
+          <li class="timeline-item__bullet">
+            {{ project.translationKey + '.' + bulletKey | translate }}
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</article>

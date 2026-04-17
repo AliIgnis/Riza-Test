@@ -1,0 +1,77 @@
+<nav class="navbar" [class.navbar--scrolled]="scrolled()" aria-label="Main">
+  <div class="navbar__inner">
+    <a href="#top" class="navbar__brand" (click)="$event.preventDefault(); goTo('top')">
+      <span class="navbar__brand-text">{{ companyName }}</span>
+      <span class="navbar__brand-dot" aria-hidden="true"></span>
+    </a>
+
+    <button
+      type="button"
+      class="navbar__toggle"
+      [attr.aria-expanded]="menuOpen()"
+      [attr.aria-label]="(menuOpen() ? 'NAV.CLOSE_MENU' : 'NAV.OPEN_MENU') | translate"
+      (click)="toggleMenu()">
+      <span class="navbar__toggle-bar" [class.is-open]="menuOpen()"></span>
+      <span class="navbar__toggle-bar" [class.is-open]="menuOpen()"></span>
+      <span class="navbar__toggle-bar" [class.is-open]="menuOpen()"></span>
+    </button>
+
+    <div class="navbar__collapse" [class.is-open]="menuOpen()">
+      <ul class="navbar__links">
+        @for (link of navLinks; track link.id) {
+          <li class="navbar__item">
+            <a
+              class="navbar__link"
+              [class.is-active]="isActive(link.sectionId)"
+              [attr.href]="'#' + link.sectionId"
+              (click)="$event.preventDefault(); goTo(link.sectionId)">
+              {{ link.labelKey | translate }}
+            </a>
+          </li>
+        }
+      </ul>
+
+      <div class="navbar__controls">
+        <button
+          type="button"
+          class="navbar__icon-btn"
+          [attr.aria-label]="(isDark() ? 'NAV.THEME_TOGGLE_LIGHT' : 'NAV.THEME_TOGGLE_DARK') | translate"
+          (click)="toggleTheme()">
+          @if (isDark()) {
+            <svg class="navbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m4.93 19.07 1.41-1.41"></path>
+              <path d="m17.66 6.34 1.41-1.41"></path>
+            </svg>
+          } @else {
+            <svg class="navbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          }
+        </button>
+
+        <div class="navbar__lang" role="group" [attr.aria-label]="'NAV.LANGUAGE_LABEL' | translate">
+          @for (lang of supportedLanguages; track lang; let last = $last) {
+            <button
+              type="button"
+              class="navbar__lang-btn"
+              [class.is-active]="currentLang() === lang"
+              [attr.aria-pressed]="currentLang() === lang"
+              (click)="setLanguage(lang)">
+              {{ lang.toUpperCase() }}
+            </button>
+            @if (!last) {
+              <span class="navbar__lang-divider" aria-hidden="true">|</span>
+            }
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

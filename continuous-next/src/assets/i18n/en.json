@@ -1,0 +1,232 @@
+{
+  "NAV": {
+    "ABOUT": "About",
+    "EXPERTISE": "Expertise",
+    "EXPERIENCE": "Experience",
+    "CLIENTS": "Clients",
+    "SKILLS": "Skills",
+    "CONTACT": "Contact",
+    "THEME_TOGGLE_LIGHT": "Switch to light mode",
+    "THEME_TOGGLE_DARK": "Switch to dark mode",
+    "OPEN_MENU": "Open navigation menu",
+    "CLOSE_MENU": "Close navigation menu",
+    "LANGUAGE_LABEL": "Change language"
+  },
+  "HERO": {
+    "EYEBROW": "Founder · {{company}}",
+    "HEADLINE": "{{name}}",
+    "SUBHEADLINE": "Agile Delivery & Transformation at Scale",
+    "INTRO": "Senior consultant with {{years}}+ years of experience leading complex agile transformations, SAP S/4HANA implementations, and scaled delivery programs across enterprise, public sector, and consulting.",
+    "CTA_PRIMARY": "Get in Touch",
+    "CTA_SECONDARY": "View Experience",
+    "MONOGRAM_ALT": "{{name}} monogram"
+  },
+  "ABOUT": {
+    "HEADLINE": "About Riza",
+    "LEAD": "Founder of {{company}}. Experienced across consulting ({{accentureYears}}+ years at Accenture), public sector ({{publicYears}} years), enterprise, and start-ups.",
+    "PARAGRAPH_1": "I help organizations deliver complex digital programs — from SAP S/4HANA greenfield implementations to cloud-native platform development. My focus is on what moves the needle: analyzing the current state honestly, planning realistically, delivering predictably, and steering with transparency.",
+    "PARAGRAPH_2": "I operate comfortably across the full spectrum of agile scaling: SAFe, Scrum@Scale, LeSS, the Spotify Model, and hybrid approaches. But frameworks are tools — the real work is coaching people, aligning strategy with execution, and removing the friction between intent and outcome.",
+    "PARAGRAPH_3": "Based in Germany. Native German, fluent English, advanced Turkish. Available for freelance engagements across DACH and Europe.",
+    "ROLES_LABEL": "Roles I take on",
+    "ROLE_1": "Project Manager",
+    "ROLE_2": "Release Train Engineer",
+    "ROLE_3": "Agile Coach",
+    "ROLE_4": "Scrum Master",
+    "ROLE_5": "Product Owner",
+    "ROLE_6": "Complex Delivery Manager",
+    "ROLE_7": "Rollout & Change Manager",
+    "ROLE_8": "PMO",
+    "ROLE_9": "Problem Solver"
+  },
+  "EXPERTISE": {
+    "HEADLINE": "Areas of Expertise",
+    "INTRO": "Deep specialization across methods, scaling frameworks, and delivery disciplines.",
+    "AREA_1_TITLE": "Scaled Agile Delivery",
+    "AREA_1_TEXT": "SAFe, Scrum@Scale, LeSS, Spotify Model. Experience running release trains with {{members}}+ team members across 5 sub-streams and {{experts}}+ subject-matter experts.",
+    "AREA_2_TITLE": "Agile Transformation",
+    "AREA_2_TEXT": "End-to-end organizational change: assessment, action plans, coaching, culture, processes, roles, mindset shifts. Built and deployed a proprietary transformation framework.",
+    "AREA_3_TITLE": "SAP S/4HANA Programs",
+    "AREA_3_TEXT": "Greenfield implementations at Lanxess and ARD. Record to Report, Finance, Controlling, Procurement, IFRS 15/16, Embedded Analytics, ABAP integration.",
+    "AREA_4_TITLE": "Rollout & Change Management",
+    "AREA_4_TEXT": "Multi-market, multi-broadcaster, multi-subsidiary rollouts. Ensured on-time go-live for {{broadcasters}} broadcasters (Wave 2) in the public sector on 01.01.2024.",
+    "AREA_5_TITLE": "Strategic Frameworks",
+    "AREA_5_TEXT": "Product Strategy Framework (Vision, Mission, Roadmap, Backlog). OKR implementation and Jira integration. Innovation Funnel (Idea2Project). Portfolio prioritization.",
+    "AREA_6_TITLE": "Program Leadership",
+    "AREA_6_TEXT": "Budget responsibility, C-level reporting, stakeholder management, risk management (ROAM), PI planning, ART events, community of practice facilitation."
+  },
+  "KEY_FIGURES": {
+    "HEADLINE": "By the Numbers",
+    "INTRO": "Quantified impact across a decade-plus of delivery.",
+    "YEARS_LABEL": "Years of Experience",
+    "TEAMS_LABEL": "Product Teams Onboarded",
+    "MEMBERS_LABEL": "Scrum Team Members Led",
+    "EXPERTS_LABEL": "Subject-Matter Experts Coordinated",
+    "BROADCASTERS_LABEL": "Broadcasters Delivered to Go-Live",
+    "PRODUCTS_LABEL": "Products Handed to Operations"
+  },
+  "EXPERIENCE": {
+    "HEADLINE": "Project Experience",
+    "INTRO": "Selected engagements. Click any project to expand full scope and responsibilities.",
+    "EXPAND_ALL": "Expand all",
+    "COLLAPSE_ALL": "Collapse all",
+    "ONGOING": "Ongoing",
+    "PRESENT": "present",
+    "DURATION_MONTHS": "{{months}} mo",
+    "DURATION_YEARS": "{{years}} yr",
+    "DURATION_YEARS_MONTHS": "{{years}} yr {{months}} mo",
+    "EXPAND_PROJECT": "Expand project details",
+    "COLLAPSE_PROJECT": "Collapse project details",
+    "EON_ATLANTIS": {
+      "CLIENT": "E.ON · Atlantis",
+      "ROLE": "Agile Coach / SAFe Scrum Master / Agile Project Manager",
+      "CONTEXT": "Improving product organization and development of Automation Digital Platforms within the Cloud Native Engineering Domain.",
+      "BULLET_1": "Scaled Agile set-up for three founding product teams: Automation Engineering, Automation Platform, Automation Enablement.",
+      "BULLET_2": "Onboarded 7+ product teams within 18 months with full integration into the existing program landscape.",
+      "BULLET_3": "Established Product Strategy Framework: Vision, Mission, Strategy, Roadmap, and Backlog.",
+      "BULLET_4": "Delivered agile workshops covering backlog creation, story mapping, prioritization techniques, PO/Scrum/Kanban training, and OKR.",
+      "BULLET_5": "Set up project portfolio management in Jira aligned with strategic business goals.",
+      "BULLET_6": "Drove continuous improvement via 1:1 interviews, assessment surveys, and actionable improvement plans."
+    },
+    "ARD_DEINSAP": {
+      "CLIENT": "ARD · (D)einSAP",
+      "ROLE": "Integration & Agile Delivery Manager / Rollout Manager / Risk Manager / Scrum Master",
+      "CONTEXT": "SAP S/4HANA greenfield implementation and process harmonization across German public broadcasters.",
+      "BULLET_1": "Ensured on-time, on-quality, on-budget go-live of Wave 2 (Bayerischer Rundfunk, Deutsche Welle, Hessischer Rundfunk, Radio Bremen) on 01.01.2024.",
+      "BULLET_2": "Implemented agile concepts: Agile Guide for change management, OKR for goal alignment, and Scaled Agile collaboration across streams.",
+      "BULLET_3": "Designed and built the 'GPO-Agile-KOSMOS' linking working streams with customer and product focus.",
+      "BULLET_4": "Led E-Procurement / Ariba cloud rollout — structuring, prioritization, delivery, and integration.",
+      "BULLET_5": "Managed ROAM risk framework (Resolved, Owned, Accepted, Mitigated) with transparent project status radiators.",
+      "BULLET_6": "Coordinated IT-Security, Data Privacy, and Accessibility compliance across the complex public-sector governance landscape.",
+      "BULLET_7": "Handed over 50+ products from development to operations with minimized technical debt."
+    },
+    "RETHINK_INNOVATIONS": {
+      "CLIENT": "rethink Innovations",
+      "ROLE": "Senior Manager · Area Lead, Agile Transformation & IT Project Management",
+      "CONTEXT": "Led the Agile Transformation and IT Project Management capability as a Senior Manager in a growing consulting start-up.",
+      "BULLET_1": "Planned, managed, and scaled a 12-person team; coached team leads on agile and servant leadership.",
+      "BULLET_2": "Established OKR as the organization's goal management framework.",
+      "BULLET_3": "Developed and deployed an in-house 'Agile Transformation' framework.",
+      "BULLET_4": "Owned annual budget planning, in-year controlling, and utilization/profitability targets.",
+      "BULLET_5": "Drove sales: market analysis, CRM, proposals, inbound marketing (Agile Assessments, SAP Agile Delivery).",
+      "BULLET_6": "Reported directly to C-level on turnover, profit, and capacity utilization."
+    },
+    "LANXESS_FIT": {
+      "CLIENT": "Accenture · Lanxess AG (FIT)",
+      "ROLE": "Release Train Engineer / SAFe Scrum Master / Agile Project Manager",
+      "CONTEXT": "SAP S/4HANA greenfield implementation (Feature Integrated Template) at Lanxess AG.",
+      "BULLET_1": "Agile Delivery Lead for the Record-to-Report (RtR) stream with 5 sub-streams and 50 scrum team members.",
+      "BULLET_2": "Scope: Finance, Controlling, IFRS 15, IFRS 16, Embedded Analytics, and ABAP development.",
+      "BULLET_3": "Resolved dependencies and blockers across streams (Order to Cash, Plant to Make, Logistics & Inventory, Asset Management).",
+      "BULLET_4": "Coordinated Product Owners with 80+ subject matter experts ensuring highest business value via backlog prioritization.",
+      "BULLET_5": "Planned and executed PI (Program Increment) events, moderated ART ceremonies, and drove continuous improvement.",
+      "BULLET_6": "Ensured go-live on time, in quality, and within budget."
+    },
+    "EON_ESP": {
+      "CLIENT": "Accenture · E.ON SE (Energy Solution Platform)",
+      "ROLE": "Scrum Master / Product Owner",
+      "CONTEXT": "Big Data / IoT platform and digital solutions development in a scaled agile environment using the Spotify Model.",
+      "BULLET_1": "Scrum Master for Azure–AWS migration and Central Data Services teams.",
+      "BULLET_2": "Coached, built teams, and supported agile transformation across multiple software projects.",
+      "BULLET_3": "Owned delivery, client reporting, backlog management, quality assurance, risk, and people management.",
+      "BULLET_4": "Introduced chapters and guilds to spread best practices across the organization.",
+      "BULLET_5": "Ensured go-live on time, in quality, and within budget."
+    },
+    "VOLKSWAGEN_IPORTAL": {
+      "CLIENT": "Accenture · Volkswagen AG (I-Portal)",
+      "ROLE": "Senior Consultant · Rollout Coordinator",
+      "CONTEXT": "International rollout of the Volkswagen Group's Connected Car platform.",
+      "BULLET_1": "Planned market-specific rollouts across multiple countries.",
+      "BULLET_2": "Enabled importer-level users and trainers; provided early-life support during first applications with dealers.",
+      "BULLET_3": "Pre-qualified and processed market complaints and requirements.",
+      "BULLET_4": "Documented and reported market-specific rollout progress."
+    },
+    "DAIMLER_CONNECTME": {
+      "CLIENT": "Accenture · Daimler AG (Connect me)",
+      "ROLE": "Senior Consultant · Key Account Manager / Rollout Coordinator",
+      "CONTEXT": "European rollout of the Mercedes-Benz Connected Car platform.",
+      "BULLET_1": "Single point of contact for IT and Business across 7 European markets (Switzerland, Germany, Italy, Austria, UK, Spain, Ireland).",
+      "BULLET_2": "Steered milestones: rollout preparation, pilot test, pilot sales, pilot end-to-end, go-live sales, rollout after-sales, go-live after-sales.",
+      "BULLET_3": "Ran weekly status calls with Project Leads, Business Leads, POS Experts, XENTRY Service Management, and HQ Experts.",
+      "BULLET_4": "Monitored, tracked, and reported project progress."
+    },
+    "VODAFONE_UK": {
+      "CLIENT": "Accenture · Vodafone UK (OneSalesforce)",
+      "ROLE": "Consultant · Migration & Testing",
+      "CONTEXT": "Global CRM rollout on Salesforce.",
+      "BULLET_1": "Created the blueprint for the global CRM application solution in Salesforce.",
+      "BULLET_2": "Owned data migration, testing, defect management, and master data management to ensure global go-live."
+    },
+    "VODAFONE_DE": {
+      "CLIENT": "Accenture · Vodafone Germany (QlikView@Salesforce)",
+      "ROLE": "Consultant · Data Scientist & Project Manager",
+      "CONTEXT": "Visual intelligence implementation for real-time sales/marketing reporting.",
+      "BULLET_1": "Implemented QlikView as the visual intelligence layer inside Salesforce for business and data discovery.",
+      "BULLET_2": "Automated ETL from 5 different sources (Flat File, ODBC, Single Data Files, Salesforce).",
+      "BULLET_3": "Built 7 enterprise reports for fixed and mobile network domains."
+    },
+    "TELEKOM": {
+      "CLIENT": "Accenture · Deutsche Telekom AG (IKOS)",
+      "ROLE": "Business Analyst · Finance",
+      "CONTEXT": "Integrated Consolidation System (IKOS) for group reporting.",
+      "BULLET_1": "Monthly group consolidation and master data management in SAP ECCS.",
+      "BULLET_2": "Procurement processes via SAP MM.",
+      "BULLET_3": "Master data management and reporting."
+    },
+    "HENKEL": {
+      "CLIENT": "Accenture · Henkel AG (SAM Projects)",
+      "ROLE": "Business Analyst · Data Analyst",
+      "CONTEXT": "SAP Business Warehouse / Business Intelligence.",
+      "BULLET_1": "Data modeling and support across the SAP BW landscape.",
+      "BULLET_2": "Documented Business Intelligence architecture and data flows.",
+      "BULLET_3": "Process optimization of workflows within data flows."
+    }
+  },
+  "CLIENTS": {
+    "HEADLINE": "Trusted by",
+    "INTRO": "Selected clients and engagements across {{years}}+ years of delivery."
+  },
+  "SKILLS": {
+    "HEADLINE": "Skills, Tools & Credentials",
+    "METHODS_TITLE": "Methods & Frameworks",
+    "METHODS_INTRO": "Frameworks applied in real engagements, not just on paper.",
+    "TECH_TITLE": "Tools & Technology",
+    "TECH_PM_LABEL": "Project Management",
+    "TECH_COLLAB_LABEL": "Collaboration",
+    "TECH_ANALYTICS_LABEL": "Analytics",
+    "TECH_CLOUD_LABEL": "Cloud",
+    "TECH_ERP_LABEL": "ERP & Tools",
+    "EDUCATION_TITLE": "Education & Certifications",
+    "EDUCATION_DEGREE": "Diploma in Economics, RWTH Aachen",
+    "EDUCATION_EXPIRED": "expired",
+    "EDUCATION_HANDS_ON": "hands-on",
+    "EDUCATION_SELF_DEVELOPED": "self-developed",
+    "LANGUAGES_TITLE": "Languages",
+    "LANG_GERMAN": "German",
+    "LANG_GERMAN_LEVEL": "Native",
+    "LANG_ENGLISH": "English",
+    "LANG_ENGLISH_LEVEL": "Fluent",
+    "LANG_TURKISH": "Turkish",
+    "LANG_TURKISH_LEVEL": "Advanced",
+    "LANG_PORTUGUESE": "Portuguese",
+    "LANG_PORTUGUESE_LEVEL": "Novice"
+  },
+  "CONTACT": {
+    "HEADLINE": "Let's Talk",
+    "INTRO": "Available for freelance engagements across DACH and Europe. Reach out for consulting inquiries, scaled agile transformations, or complex delivery programs.",
+    "CTA": "Email Riza",
+    "CTA_SUBTEXT": "Opens your email client with a pre-filled subject",
+    "EMAIL_LABEL": "Email",
+    "PHONE_LABEL": "Phone",
+    "WEB_LABEL": "Web",
+    "LOCATION_LABEL": "Based in",
+    "RESPONSE_NOTE": "I typically respond within 2 business days."
+  },
+  "FOOTER": {
+    "TAGLINE": "Agile Delivery & Transformation at Scale",
+    "COPYRIGHT": "© 2026 {{name}} · {{company}}. All rights reserved.",
+    "IMPRINT": "Imprint",
+    "PRIVACY": "Privacy",
+    "QUICK_LINKS": "Quick Links",
+    "CONTACT_HEADING": "Contact"
+  }
+}

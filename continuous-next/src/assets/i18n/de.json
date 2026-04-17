@@ -1,0 +1,232 @@
+{
+  "NAV": {
+    "ABOUT": "Über mich",
+    "EXPERTISE": "Expertise",
+    "EXPERIENCE": "Erfahrung",
+    "CLIENTS": "Kunden",
+    "SKILLS": "Kompetenzen",
+    "CONTACT": "Kontakt",
+    "THEME_TOGGLE_LIGHT": "Zum hellen Modus wechseln",
+    "THEME_TOGGLE_DARK": "Zum dunklen Modus wechseln",
+    "OPEN_MENU": "Navigationsmenü öffnen",
+    "CLOSE_MENU": "Navigationsmenü schließen",
+    "LANGUAGE_LABEL": "Sprache wechseln"
+  },
+  "HERO": {
+    "EYEBROW": "Gründer · {{company}}",
+    "HEADLINE": "{{name}}",
+    "SUBHEADLINE": "Agile Delivery & Transformation im Großformat",
+    "INTRO": "Senior Consultant mit über {{years}} Jahren Erfahrung in der Leitung komplexer agiler Transformationen, SAP S/4HANA-Implementierungen und skalierter Delivery-Programme im Enterprise-, Public- und Beratungsumfeld.",
+    "CTA_PRIMARY": "Kontakt aufnehmen",
+    "CTA_SECONDARY": "Erfahrung ansehen",
+    "MONOGRAM_ALT": "Monogramm {{name}}"
+  },
+  "ABOUT": {
+    "HEADLINE": "Über Riza",
+    "LEAD": "Gründer von {{company}}. Erfahren in Beratung (über {{accentureYears}} Jahre bei Accenture), öffentlicher Sektor ({{publicYears}} Jahre), Enterprise und Start-ups.",
+    "PARAGRAPH_1": "Ich unterstütze Organisationen bei der Umsetzung komplexer digitaler Programme — von SAP S/4HANA Greenfield-Implementierungen bis hin zu Cloud-nativer Plattformentwicklung. Mein Fokus liegt auf dem, was wirklich Wirkung zeigt: ehrliche Analyse des Status quo, realistische Planung, verlässliche Delivery und transparente Steuerung.",
+    "PARAGRAPH_2": "Ich bewege mich sicher im gesamten Spektrum der agilen Skalierung: SAFe, Scrum@Scale, LeSS, Spotify Model und hybride Ansätze. Frameworks sind jedoch nur Werkzeuge — die eigentliche Arbeit besteht im Coaching von Menschen, in der Verzahnung von Strategie und Umsetzung sowie im Beseitigen der Reibung zwischen Absicht und Ergebnis.",
+    "PARAGRAPH_3": "Ansässig in Deutschland. Deutsch (Muttersprache), Englisch verhandlungssicher, Türkisch fortgeschritten. Verfügbar für Freelance-Engagements in der DACH-Region und Europa.",
+    "ROLES_LABEL": "Rollen, die ich übernehme",
+    "ROLE_1": "Project Manager",
+    "ROLE_2": "Release Train Engineer",
+    "ROLE_3": "Agile Coach",
+    "ROLE_4": "Scrum Master",
+    "ROLE_5": "Product Owner",
+    "ROLE_6": "Complex Delivery Manager",
+    "ROLE_7": "Rollout- & Change-Manager",
+    "ROLE_8": "PMO",
+    "ROLE_9": "Problem Solver"
+  },
+  "EXPERTISE": {
+    "HEADLINE": "Expertise-Bereiche",
+    "INTRO": "Tiefgehende Spezialisierung in Methoden, Skalierungs-Frameworks und Delivery-Disziplinen.",
+    "AREA_1_TITLE": "Scaled Agile Delivery",
+    "AREA_1_TEXT": "SAFe, Scrum@Scale, LeSS, Spotify Model. Erfahrung in der Leitung von Release Trains mit über {{members}} Teammitgliedern über 5 Substreams und über {{experts}} Fachexperten.",
+    "AREA_2_TITLE": "Agile Transformation",
+    "AREA_2_TEXT": "End-to-End-Organisationswandel: Assessment, Maßnahmenpläne, Coaching, Kultur, Prozesse, Rollen, Mindset-Shifts. Eigenes Transformations-Framework entwickelt und eingeführt.",
+    "AREA_3_TITLE": "SAP S/4HANA-Programme",
+    "AREA_3_TEXT": "Greenfield-Implementierungen bei Lanxess und ARD. Record to Report, Finance, Controlling, Procurement, IFRS 15/16, Embedded Analytics, ABAP-Integration.",
+    "AREA_4_TITLE": "Rollout & Change Management",
+    "AREA_4_TEXT": "Multi-Markt-, Multi-Broadcaster- und Multi-Tochtergesellschafts-Rollouts. Sicherstellung des termingerechten Go-Lives für {{broadcasters}} Rundfunkanstalten (Welle 2) im öffentlichen Sektor am 01.01.2024.",
+    "AREA_5_TITLE": "Strategische Frameworks",
+    "AREA_5_TEXT": "Product Strategy Framework (Vision, Mission, Roadmap, Backlog). OKR-Einführung und Jira-Integration. Innovation Funnel (Idea2Project). Portfolio-Priorisierung.",
+    "AREA_6_TITLE": "Programmleitung",
+    "AREA_6_TEXT": "Budgetverantwortung, C-Level-Reporting, Stakeholder-Management, Risiko-Management (ROAM), PI-Planning, ART-Events, Community-of-Practice-Moderation."
+  },
+  "KEY_FIGURES": {
+    "HEADLINE": "In Zahlen",
+    "INTRO": "Quantifizierte Wirkung aus über einem Jahrzehnt Delivery-Erfahrung.",
+    "YEARS_LABEL": "Jahre Erfahrung",
+    "TEAMS_LABEL": "Onboarded Product Teams",
+    "MEMBERS_LABEL": "Geführte Scrum-Teammitglieder",
+    "EXPERTS_LABEL": "Koordinierte Fachexperten",
+    "BROADCASTERS_LABEL": "Rundfunkanstalten zum Go-Live geführt",
+    "PRODUCTS_LABEL": "An Betrieb übergebene Produkte"
+  },
+  "EXPERIENCE": {
+    "HEADLINE": "Projekterfahrung",
+    "INTRO": "Ausgewählte Engagements. Zum Aufklappen eines Projekts auf die Karte klicken.",
+    "EXPAND_ALL": "Alle öffnen",
+    "COLLAPSE_ALL": "Alle schließen",
+    "ONGOING": "Laufend",
+    "PRESENT": "heute",
+    "DURATION_MONTHS": "{{months}} Mon.",
+    "DURATION_YEARS": "{{years}} J.",
+    "DURATION_YEARS_MONTHS": "{{years}} J. {{months}} Mon.",
+    "EXPAND_PROJECT": "Projektdetails öffnen",
+    "COLLAPSE_PROJECT": "Projektdetails schließen",
+    "EON_ATLANTIS": {
+      "CLIENT": "E.ON · Atlantis",
+      "ROLE": "Agile Coach / SAFe Scrum Master / Agile Project Manager",
+      "CONTEXT": "Weiterentwicklung der Produktorganisation und -entwicklung der Automation Digital Platforms im Cloud Native Engineering Domain.",
+      "BULLET_1": "Scaled-Agile-Set-up für drei Gründungs-Product-Teams: Automation Engineering, Automation Platform, Automation Enablement.",
+      "BULLET_2": "Innerhalb von 18 Monaten 7+ Product Teams onboarded und vollständig in die bestehende Programmlandschaft integriert.",
+      "BULLET_3": "Einführung des Product Strategy Frameworks: Vision, Mission, Strategie, Roadmap und Backlog.",
+      "BULLET_4": "Durchführung agiler Workshops zu Backlog-Erstellung, Story Mapping, Priorisierungstechniken, PO-/Scrum-/Kanban-Trainings und OKR.",
+      "BULLET_5": "Aufbau eines Projekt-Portfolio-Managements in Jira im Einklang mit den strategischen Unternehmenszielen.",
+      "BULLET_6": "Kontinuierliche Verbesserung durch 1:1-Interviews, Assessment-Umfragen und konkrete Maßnahmenpläne."
+    },
+    "ARD_DEINSAP": {
+      "CLIENT": "ARD · (D)einSAP",
+      "ROLE": "Integration & Agile Delivery Manager / Rollout Manager / Risk Manager / Scrum Master",
+      "CONTEXT": "SAP S/4HANA Greenfield-Implementierung und Prozessharmonisierung bei den deutschen öffentlich-rechtlichen Rundfunkanstalten.",
+      "BULLET_1": "Sicherstellung des termin-, qualitäts- und budgetgerechten Go-Lives der Welle 2 (Bayerischer Rundfunk, Deutsche Welle, Hessischer Rundfunk, Radio Bremen) am 01.01.2024.",
+      "BULLET_2": "Einführung agiler Konzepte: Agile Guide für das Change Management, OKR für Zielausrichtung und Scaled-Agile-Zusammenarbeit über Streams hinweg.",
+      "BULLET_3": "Konzeption und Aufbau des „GPO-Agile-KOSMOS", der Arbeitsstreams mit Kunden- und Produktfokus verknüpft.",
+      "BULLET_4": "Leitung des E-Procurement- / Ariba-Cloud-Rollouts — Strukturierung, Priorisierung, Delivery und Integration.",
+      "BULLET_5": "Steuerung des ROAM-Risikoframeworks (Resolved, Owned, Accepted, Mitigated) mit transparenten Projekt-Statusradiatoren.",
+      "BULLET_6": "Koordination von IT-Security, Datenschutz und Barrierefreiheit innerhalb der komplexen Governance-Landschaft des öffentlichen Sektors.",
+      "BULLET_7": "Übergabe von 50+ Produkten aus der Entwicklung an den Betrieb bei minimierter technischer Schuld."
+    },
+    "RETHINK_INNOVATIONS": {
+      "CLIENT": "rethink Innovations",
+      "ROLE": "Senior Manager · Area Lead, Agile Transformation & IT Project Management",
+      "CONTEXT": "Leitung des Bereichs Agile Transformation und IT Project Management als Senior Manager in einem wachsenden Beratungs-Start-up.",
+      "BULLET_1": "Planung, Steuerung und Skalierung eines 12-köpfigen Teams; Coaching der Team-Leads zu Agilität und Servant Leadership.",
+      "BULLET_2": "Einführung von OKR als Zielmanagement-Framework der Organisation.",
+      "BULLET_3": "Entwicklung und Einführung eines hauseigenen Frameworks zur „Agile Transformation".",
+      "BULLET_4": "Verantwortung für jährliche Budgetplanung, unterjähriges Controlling sowie Auslastungs- und Profitabilitätsziele.",
+      "BULLET_5": "Vertrieb: Marktanalysen, CRM, Angebote, Inbound-Marketing (Agile Assessments, SAP Agile Delivery).",
+      "BULLET_6": "Direkte Berichterstattung an das C-Level zu Umsatz, Profit und Auslastung."
+    },
+    "LANXESS_FIT": {
+      "CLIENT": "Accenture · Lanxess AG (FIT)",
+      "ROLE": "Release Train Engineer / SAFe Scrum Master / Agile Project Manager",
+      "CONTEXT": "SAP S/4HANA Greenfield-Implementierung (Feature Integrated Template) bei der Lanxess AG.",
+      "BULLET_1": "Agile Delivery Lead für den Record-to-Report (RtR) Stream mit 5 Substreams und 50 Scrum-Teammitgliedern.",
+      "BULLET_2": "Scope: Finance, Controlling, IFRS 15, IFRS 16, Embedded Analytics und ABAP-Entwicklung.",
+      "BULLET_3": "Auflösung von Abhängigkeiten und Blockern streamübergreifend (Order to Cash, Plant to Make, Logistics & Inventory, Asset Management).",
+      "BULLET_4": "Koordination der Product Owner mit 80+ Fachexperten zur Sicherstellung maximaler Business Value durch Backlog-Priorisierung.",
+      "BULLET_5": "Planung und Durchführung von PI (Program Increment) Events, Moderation der ART-Zeremonien und kontinuierliche Verbesserung.",
+      "BULLET_6": "Sicherstellung des termin-, qualitäts- und budgetgerechten Go-Lives."
+    },
+    "EON_ESP": {
+      "CLIENT": "Accenture · E.ON SE (Energy Solution Platform)",
+      "ROLE": "Scrum Master / Product Owner",
+      "CONTEXT": "Big-Data- / IoT-Plattform und Entwicklung digitaler Lösungen in einem skalierten agilen Umfeld nach dem Spotify Model.",
+      "BULLET_1": "Scrum Master für die Azure–AWS-Migration und die Central Data Services Teams.",
+      "BULLET_2": "Coaching, Teamaufbau und Unterstützung der agilen Transformation über mehrere Softwareprojekte hinweg.",
+      "BULLET_3": "Verantwortung für Delivery, Client Reporting, Backlog Management, Qualitätssicherung, Risiken und People Management.",
+      "BULLET_4": "Einführung von Chapters und Guilds zur Verbreitung von Best Practices in der Organisation.",
+      "BULLET_5": "Sicherstellung des termin-, qualitäts- und budgetgerechten Go-Lives."
+    },
+    "VOLKSWAGEN_IPORTAL": {
+      "CLIENT": "Accenture · Volkswagen AG (I-Portal)",
+      "ROLE": "Senior Consultant · Rollout Coordinator",
+      "CONTEXT": "Internationaler Rollout der Connected-Car-Plattform des Volkswagen-Konzerns.",
+      "BULLET_1": "Planung marktspezifischer Rollouts in mehreren Ländern.",
+      "BULLET_2": "Enablement der Importeurs-User und Trainer; Early-Life-Support bei den ersten Anwendungen mit den Händlern.",
+      "BULLET_3": "Vorqualifizierung und Bearbeitung marktspezifischer Beschwerden und Anforderungen.",
+      "BULLET_4": "Dokumentation und Reporting des marktspezifischen Rollout-Fortschritts."
+    },
+    "DAIMLER_CONNECTME": {
+      "CLIENT": "Accenture · Daimler AG (Connect me)",
+      "ROLE": "Senior Consultant · Key Account Manager / Rollout Coordinator",
+      "CONTEXT": "Europäischer Rollout der Connected-Car-Plattform von Mercedes-Benz.",
+      "BULLET_1": "Single Point of Contact für IT und Business in 7 europäischen Märkten (Schweiz, Deutschland, Italien, Österreich, UK, Spanien, Irland).",
+      "BULLET_2": "Steuerung der Meilensteine: Rollout-Vorbereitung, Pilot-Test, Pilot-Sales, Pilot End-to-End, Go-Live Sales, Rollout After-Sales, Go-Live After-Sales.",
+      "BULLET_3": "Wöchentliche Status Calls mit Project Leads, Business Leads, POS-Experten, XENTRY Service Management und HQ-Experten.",
+      "BULLET_4": "Monitoring, Tracking und Reporting des Projektfortschritts."
+    },
+    "VODAFONE_UK": {
+      "CLIENT": "Accenture · Vodafone UK (OneSalesforce)",
+      "ROLE": "Consultant · Migration & Testing",
+      "CONTEXT": "Globaler CRM-Rollout auf Salesforce.",
+      "BULLET_1": "Erstellung des Blueprints für die globale CRM-Anwendung in Salesforce.",
+      "BULLET_2": "Verantwortung für Datenmigration, Testing, Defect Management und Stammdatenpflege zur Sicherstellung des globalen Go-Lives."
+    },
+    "VODAFONE_DE": {
+      "CLIENT": "Accenture · Vodafone Germany (QlikView@Salesforce)",
+      "ROLE": "Consultant · Data Scientist & Project Manager",
+      "CONTEXT": "Einführung einer Visual-Intelligence-Lösung für Echtzeit-Reporting in Sales und Marketing.",
+      "BULLET_1": "Einführung von QlikView als Visual-Intelligence-Layer innerhalb von Salesforce für Business und Data Discovery.",
+      "BULLET_2": "Automatisierung von ETL-Strecken aus 5 verschiedenen Quellen (Flat File, ODBC, Single Data Files, Salesforce).",
+      "BULLET_3": "Erstellung von 7 Enterprise-Reports für Fest- und Mobilfunkbereich."
+    },
+    "TELEKOM": {
+      "CLIENT": "Accenture · Deutsche Telekom AG (IKOS)",
+      "ROLE": "Business Analyst · Finance",
+      "CONTEXT": "Integriertes Konsolidierungssystem (IKOS) für das Konzern-Reporting.",
+      "BULLET_1": "Monatliche Konzernkonsolidierung und Stammdatenpflege in SAP ECCS.",
+      "BULLET_2": "Beschaffungsprozesse über SAP MM.",
+      "BULLET_3": "Stammdatenpflege und Reporting."
+    },
+    "HENKEL": {
+      "CLIENT": "Accenture · Henkel AG (SAM Projects)",
+      "ROLE": "Business Analyst · Data Analyst",
+      "CONTEXT": "SAP Business Warehouse / Business Intelligence.",
+      "BULLET_1": "Datenmodellierung und Support in der SAP-BW-Landschaft.",
+      "BULLET_2": "Dokumentation der Business-Intelligence-Architektur und Datenflüsse.",
+      "BULLET_3": "Prozessoptimierung von Workflows innerhalb der Datenflüsse."
+    }
+  },
+  "CLIENTS": {
+    "HEADLINE": "Vertrauen genießt von",
+    "INTRO": "Ausgewählte Kunden und Engagements aus über {{years}} Jahren Delivery-Erfahrung."
+  },
+  "SKILLS": {
+    "HEADLINE": "Kompetenzen, Tools & Qualifikationen",
+    "METHODS_TITLE": "Methoden & Frameworks",
+    "METHODS_INTRO": "Frameworks, die in realen Engagements angewendet wurden — nicht nur auf dem Papier.",
+    "TECH_TITLE": "Tools & Technologie",
+    "TECH_PM_LABEL": "Projektmanagement",
+    "TECH_COLLAB_LABEL": "Zusammenarbeit",
+    "TECH_ANALYTICS_LABEL": "Analytics",
+    "TECH_CLOUD_LABEL": "Cloud",
+    "TECH_ERP_LABEL": "ERP & Tools",
+    "EDUCATION_TITLE": "Ausbildung & Zertifikate",
+    "EDUCATION_DEGREE": "Diplom in Volkswirtschaftslehre, RWTH Aachen",
+    "EDUCATION_EXPIRED": "abgelaufen",
+    "EDUCATION_HANDS_ON": "hands-on",
+    "EDUCATION_SELF_DEVELOPED": "selbst entwickelt",
+    "LANGUAGES_TITLE": "Sprachen",
+    "LANG_GERMAN": "Deutsch",
+    "LANG_GERMAN_LEVEL": "Muttersprache",
+    "LANG_ENGLISH": "Englisch",
+    "LANG_ENGLISH_LEVEL": "Verhandlungssicher",
+    "LANG_TURKISH": "Türkisch",
+    "LANG_TURKISH_LEVEL": "Fortgeschritten",
+    "LANG_PORTUGUESE": "Portugiesisch",
+    "LANG_PORTUGUESE_LEVEL": "Grundkenntnisse"
+  },
+  "CONTACT": {
+    "HEADLINE": "Lassen Sie uns sprechen",
+    "INTRO": "Verfügbar für Freelance-Engagements in der DACH-Region und Europa. Sprechen Sie mich gerne an für Beratungsanfragen, skalierte agile Transformationen oder komplexe Delivery-Programme.",
+    "CTA": "E-Mail an Riza",
+    "CTA_SUBTEXT": "Öffnet Ihr E-Mail-Programm mit vorausgefülltem Betreff",
+    "EMAIL_LABEL": "E-Mail",
+    "PHONE_LABEL": "Telefon",
+    "WEB_LABEL": "Web",
+    "LOCATION_LABEL": "Standort",
+    "RESPONSE_NOTE": "Ich antworte in der Regel innerhalb von 2 Werktagen."
+  },
+  "FOOTER": {
+    "TAGLINE": "Agile Delivery & Transformation im Großformat",
+    "COPYRIGHT": "© 2026 {{name}} · {{company}}. Alle Rechte vorbehalten.",
+    "IMPRINT": "Impressum",
+    "PRIVACY": "Datenschutz",
+    "QUICK_LINKS": "Schnellzugriff",
+    "CONTACT_HEADING": "Kontakt"
+  }
+}

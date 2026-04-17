@@ -1,0 +1,76 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.experience {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: $spacing-xl;
+    margin-bottom: $spacing-3xl;
+    flex-wrap: wrap;
+  }
+
+  &__header-text {
+    max-width: 640px;
+  }
+
+  &__headline {
+    font-size: $font-size-3xl;
+    margin-bottom: $spacing-sm;
+
+    @include breakpoint-up(md) {
+      font-size: $font-size-4xl;
+    }
+  }
+
+  &__intro {
+    margin: 0;
+    font-size: $font-size-lg;
+    color: var(--cn-text-secondary);
+  }
+
+  &__actions {
+    display: flex;
+    gap: $spacing-sm;
+  }
+
+  &__action {
+    background: transparent;
+    border: 1px solid var(--cn-border);
+    border-radius: $button-border-radius;
+    padding: $spacing-sm $spacing-md;
+    font-size: $font-size-sm;
+    color: var(--cn-text-secondary);
+    cursor: pointer;
+    transition: border-color $transition-fast, color $transition-fast;
+
+    &:hover,
+    &:focus-visible {
+      border-color: var(--cn-primary);
+      color: var(--cn-primary);
+    }
+  }
+
+  &__timeline {
+    position: relative;
+    padding-left: 0;
+
+    @include breakpoint-up(md) {
+      padding-left: 0;
+    }
+  }
+
+  &__timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 216px;
+    width: 1px;
+    background: var(--cn-border);
+
+    @include breakpoint-down(md) {
+      display: none;
+    }
+  }
+}

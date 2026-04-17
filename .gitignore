@@ -1,0 +1,46 @@
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+
+# Angular build output
+dist/
+tmp/
+out-tsc/
+.angular/
+
+# IDE / editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.sublime-*
+.project
+.classpath
+.c9/
+.launch
+.settings/
+*.launch
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Env
+.env
+.env.*
+
+# Coverage / tests
+coverage/
+*.lcov
+
+# Misc
+*.swp
+*.swo

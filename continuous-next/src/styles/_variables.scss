@@ -1,0 +1,67 @@
+// ─── Light Theme Colors ─────────────────────────────────────
+$color-primary: #2D5F4F;
+$color-primary-dark: #1E4438;
+$color-primary-light: #C9DDD4;
+$color-accent: #B08D57;
+$color-accent-light: #D4B88A;
+$color-text-primary: #1A1F1C;
+$color-text-secondary: #5A6461;
+$color-background: #FAFAF7;
+$color-background-alt: #F0EFE9;
+$color-card-bg: #FFFFFF;
+$color-border: #E0DFD6;
+$color-divider: #D0CFC5;
+
+// ─── Typography ─────────────────────────────────────────────
+$font-family-heading: 'Fraunces', 'Playfair Display', Georgia, serif;
+$font-family-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-mono: 'JetBrains Mono', 'Inter', ui-monospace, monospace;
+
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 2rem;
+$font-size-4xl: 2.5rem;
+$font-size-hero: 3.5rem;
+$font-size-stat: 3rem;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$line-height-tight: 1.2;
+$line-height-base: 1.5;
+$line-height-relaxed: 1.7;
+
+// ─── Spacing Scale ──────────────────────────────────────────
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 3rem;
+$spacing-3xl: 4rem;
+$spacing-4xl: 6rem;
+$spacing-section: 6rem;
+
+// ─── Breakpoints ────────────────────────────────────────────
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// ─── Layout Constants ───────────────────────────────────────
+$navbar-height: 72px;
+$max-content-width: 1200px;
+$card-border-radius: 8px;
+$button-border-radius: 4px;
+$section-max-width-narrow: 800px;
+
+// ─── Transitions ────────────────────────────────────────────
+$transition-fast: 150ms ease;
+$transition-base: 250ms ease;
+$transition-slow: 400ms ease;

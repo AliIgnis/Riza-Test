@@ -1,0 +1,72 @@
+<section id="skills" class="skills cn-section" aria-labelledby="skills-headline">
+  <div class="cn-container">
+    <header class="skills__header" cnFadeIn>
+      <h2 id="skills-headline" class="skills__headline">{{ 'SKILLS.HEADLINE' | translate }}</h2>
+    </header>
+
+    <div class="skills__grid">
+      <section class="skills__panel" cnFadeIn aria-labelledby="skills-methods">
+        <h3 id="skills-methods" class="skills__subtitle">{{ 'SKILLS.METHODS_TITLE' | translate }}</h3>
+        <p class="skills__subintro">{{ 'SKILLS.METHODS_INTRO' | translate }}</p>
+        <ul class="skills__tags">
+          @for (method of methods; track method) {
+            <li class="skills__tag">{{ method }}</li>
+          }
+        </ul>
+      </section>
+
+      <section class="skills__panel" cnFadeIn aria-labelledby="skills-tech">
+        <h3 id="skills-tech" class="skills__subtitle">{{ 'SKILLS.TECH_TITLE' | translate }}</h3>
+        <ul class="skills__tool-groups">
+          @for (group of tools; track group.labelKey) {
+            <li class="skills__tool-group">
+              <span class="skills__tool-label">{{ group.labelKey | translate }}</span>
+              <span class="skills__tool-values">{{ group.tools.join(' · ') }}</span>
+            </li>
+          }
+        </ul>
+      </section>
+
+      <section class="skills__panel" cnFadeIn aria-labelledby="skills-education">
+        <h3 id="skills-education" class="skills__subtitle">{{ 'SKILLS.EDUCATION_TITLE' | translate }}</h3>
+        <p class="skills__degree">{{ 'SKILLS.EDUCATION_DEGREE' | translate }}</p>
+        <ul class="skills__certs">
+          @for (cert of certifications; track cert.name) {
+            <li class="skills__cert" [class.is-expired]="cert.expired">
+              <span class="skills__cert-check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span class="skills__cert-name">{{ cert.name }}</span>
+              @if (cert.expired) {
+                <span class="skills__cert-tag">— {{ 'SKILLS.EDUCATION_EXPIRED' | translate }}</span>
+              } @else if (cert.note) {
+                <span class="skills__cert-tag">— {{ 'SKILLS.' + cert.note | translate }}</span>
+              }
+            </li>
+          }
+        </ul>
+      </section>
+
+      <section class="skills__panel" cnFadeIn aria-labelledby="skills-languages">
+        <h3 id="skills-languages" class="skills__subtitle">{{ 'SKILLS.LANGUAGES_TITLE' | translate }}</h3>
+        <ul class="skills__languages">
+          @for (lang of languages; track lang.nameKey) {
+            <li class="skills__language">
+              <div class="skills__language-text">
+                <span class="skills__language-name">{{ lang.nameKey | translate }}</span>
+                <span class="skills__language-level">{{ lang.levelKey | translate }}</span>
+              </div>
+              <div class="skills__language-dots" [attr.aria-label]="lang.proficiency + ' / ' + lang.maxProficiency">
+                @for (state of dotsForLanguage(lang); track $index) {
+                  <span class="skills__dot" [class.is-full]="state === 'full'" [class.is-half]="state === 'half'"></span>
+                }
+              </div>
+            </li>
+          }
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>

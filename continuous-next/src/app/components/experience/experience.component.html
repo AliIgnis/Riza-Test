@@ -1,0 +1,31 @@
+<section id="experience" class="experience cn-section" aria-labelledby="experience-headline">
+  <div class="cn-container">
+    <header class="experience__header" cnFadeIn>
+      <div class="experience__header-text">
+        <h2 id="experience-headline" class="experience__headline">
+          {{ 'EXPERIENCE.HEADLINE' | translate }}
+        </h2>
+        <p class="experience__intro">{{ 'EXPERIENCE.INTRO' | translate }}</p>
+      </div>
+      <div class="experience__actions">
+        <button type="button" class="experience__action" (click)="expandAll()">
+          {{ 'EXPERIENCE.EXPAND_ALL' | translate }}
+        </button>
+        <button type="button" class="experience__action" (click)="collapseAll()">
+          {{ 'EXPERIENCE.COLLAPSE_ALL' | translate }}
+        </button>
+      </div>
+    </header>
+
+    <div class="experience__timeline">
+      <span class="experience__timeline-line" aria-hidden="true"></span>
+      @for (project of projects; track project.id) {
+        <cn-timeline-item
+          [project]="project"
+          [expanded]="isExpanded(project.id)"
+          (toggle)="toggle($event)">
+        </cn-timeline-item>
+      }
+    </div>
+  </div>
+</section>

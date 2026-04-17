@@ -1,0 +1,44 @@
+<section id="top" class="hero" aria-labelledby="hero-headline">
+  <div class="hero__inner">
+    <div class="hero__content">
+      <p class="hero__eyebrow">{{ 'HERO.EYEBROW' | translate: { company: companyName } }}</p>
+      <h1 id="hero-headline" class="hero__headline">
+        {{ 'HERO.HEADLINE' | translate: { name: ownerName } }}
+      </h1>
+      <p class="hero__subheadline">{{ 'HERO.SUBHEADLINE' | translate }}</p>
+      <p class="hero__intro">
+        {{ 'HERO.INTRO' | translate: { years: years } }}
+      </p>
+      <div class="hero__ctas">
+        <a
+          class="hero__cta hero__cta--primary"
+          href="#contact"
+          (click)="$event.preventDefault(); goTo('contact')">
+          {{ 'HERO.CTA_PRIMARY' | translate }}
+        </a>
+        <a
+          class="hero__cta hero__cta--secondary"
+          href="#experience"
+          (click)="$event.preventDefault(); goTo('experience')">
+          {{ 'HERO.CTA_SECONDARY' | translate }}
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__visual-shape">
+        <svg class="hero__visual-dots" viewBox="0 0 320 320">
+          <defs>
+            <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.2" fill="currentColor" opacity="0.35"></circle>
+            </pattern>
+          </defs>
+          <circle cx="160" cy="160" r="150" fill="url(#dots)"></circle>
+        </svg>
+        <span class="hero__monogram">{{ monogram }}</span>
+        <span class="hero__arc hero__arc--outer"></span>
+        <span class="hero__arc hero__arc--inner"></span>
+      </div>
+    </div>
+  </div>
+</section>

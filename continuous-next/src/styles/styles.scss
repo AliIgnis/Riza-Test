@@ -1,0 +1,140 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'animations';
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root {
+  --cn-bg: #FAFAF7;
+  --cn-bg-alt: #F0EFE9;
+  --cn-text: #1A1F1C;
+  --cn-text-secondary: #5A6461;
+  --cn-primary: #2D5F4F;
+  --cn-primary-dark: #1E4438;
+  --cn-primary-light: #C9DDD4;
+  --cn-accent: #B08D57;
+  --cn-accent-light: #D4B88A;
+  --cn-card-bg: #FFFFFF;
+  --cn-border: #E0DFD6;
+  --cn-shadow: rgba(26, 31, 28, 0.08);
+  --cn-navbar-bg: rgba(250, 250, 247, 0.92);
+}
+
+[data-theme='dark'] {
+  --cn-bg: #141815;
+  --cn-bg-alt: #1C211E;
+  --cn-text: #E8E6DE;
+  --cn-text-secondary: #9AA29D;
+  --cn-primary: #5FA088;
+  --cn-primary-dark: #3D7E68;
+  --cn-primary-light: #26382F;
+  --cn-accent: #D4B88A;
+  --cn-accent-light: #B08D57;
+  --cn-card-bg: #1F251F;
+  --cn-border: #2E352F;
+  --cn-shadow: rgba(0, 0, 0, 0.4);
+  --cn-navbar-bg: rgba(20, 24, 21, 0.94);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: $navbar-height;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: $font-family-body;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: var(--cn-text);
+  background: var(--cn-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background $transition-slow, color $transition-slow;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 $spacing-md 0;
+  @include heading;
+}
+
+p {
+  margin: 0 0 $spacing-md 0;
+  line-height: $line-height-relaxed;
+  color: var(--cn-text-secondary);
+}
+
+a {
+  color: var(--cn-primary);
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--cn-primary-dark);
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--cn-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cn-accent);
+  outline-offset: 2px;
+}
+
+section {
+  scroll-margin-top: $navbar-height;
+}
+
+.cn-container {
+  @include container;
+}
+
+.cn-section {
+  @include section-padding;
+}
+
+.cn-section--alt {
+  background: var(--cn-bg-alt);
+}
+
+.cn-skip-link {
+  position: absolute;
+  top: -100px;
+  left: $spacing-md;
+  padding: $spacing-sm $spacing-md;
+  background: var(--cn-primary);
+  color: #FFFFFF;
+  border-radius: $button-border-radius;
+  z-index: 1000;
+
+  &:focus {
+    top: $spacing-md;
+  }
+}

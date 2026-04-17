@@ -1,0 +1,24 @@
+<section id="about" class="about cn-section" aria-labelledby="about-headline">
+  <div class="cn-container about__grid">
+    <div class="about__narrative" cnFadeIn>
+      <h2 id="about-headline" class="about__headline">{{ 'ABOUT.HEADLINE' | translate }}</h2>
+      <p class="about__lead">
+        {{ 'ABOUT.LEAD' | translate: { company: companyName, accentureYears: accentureYears, publicYears: publicYears } }}
+      </p>
+      <p class="about__paragraph">{{ 'ABOUT.PARAGRAPH_1' | translate }}</p>
+      <p class="about__paragraph">{{ 'ABOUT.PARAGRAPH_2' | translate }}</p>
+      <p class="about__paragraph">{{ 'ABOUT.PARAGRAPH_3' | translate }}</p>
+    </div>
+
+    <aside class="about__roles" cnFadeIn>
+      <div class="about__roles-card">
+        <h3 class="about__roles-title">{{ 'ABOUT.ROLES_LABEL' | translate }}</h3>
+        <ul class="about__roles-list">
+          @for (roleKey of roleKeys; track roleKey) {
+            <li class="about__role">{{ roleKey | translate }}</li>
+          }
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
